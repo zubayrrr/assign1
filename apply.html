@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tracing steps - IT job postings</title>
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
+
+    <!-- importing custom css -->
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html"> <i class="fa fa-hand-spock-o"></i> Tracing steps</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="/">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/jobs.html">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/apply.html">Apply now!</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto: 102881249@student.swin.edu.au">Email us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Content -->
+    <div style="height: 35rem;">
+        <div class="container-fluid h-100">
+            <div class="row p-5 align-items-center h-100 home-section text-light">
+                <div class="col text-center">
+                    <h1 class=" text-uppercase text-primary">Found your ideal job position?</h1>
+                    <p class="lead">Try your luck, fill the form below.</p>
+                    <ul class="list-unstyled m-5">
+                        <li><span class="lead">Still not sure? Talk to our consultant <a href="/" target="_blank"
+                                    class="text-danger">
+                                    here</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Apply now section-->
+    <p class="text-center my-5 py-2 text-light subheading bg-dark">Apply now</p>
+
+    <div class="container">
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+            <!--Details-->
+            <div class="form-group">
+                <label for="inputJobReferenceNumber">Job Reference number</label>
+                <input required type="text" name="Job Reference Number" class="form-control"
+                    id="inputJobReferenceNumber" placeholder="J7h8i - copy from job listings">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputfname">First name</label>
+                    <input required type="text" class="form-control" id="inputFirstname" name="fname"
+                        placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputlname">Last Name</label>
+                    <input required type="text" class="form-control" name="lname" id="inputLastname"
+                        placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputDOB">Date of birth</label>
+                <input required type="text" name="DOB" class="form-control" id="inputDOB" placeholder="dd/mm/yyyy">
+            </div>
+
+            <!--Gender-->
+            <div class="form-group">
+                <label for="inputGender">Gender</label> <br>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input required type="radio" value="Male" id="male" name="gender" class="custom-control-input">
+                    <label class="custom-control-label" for="male">Male</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input required type="radio" value="Female" id="female" name="gender" class="custom-control-input">
+                    <label class="custom-control-label" for="female">Female</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                    <input required type="radio" value="Other" id="other" name="gender" class="custom-control-input">
+                    <label class="custom-control-label" for="other">Other</label>
+                </div>
+            </div>
+
+            <!--Address-->
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input required type="text" name="address" class="form-control" id="inputAddress"
+                    placeholder="1234 Main St">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input required type="text" name="city" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" name="state" class="form-control">
+                        <option selected>Choose state</option>
+                        <option>VIC</option>
+                        <option>NSW</option>
+                        <option>QLD</option>
+                        <option>NT</option>
+                        <option>WA</option>
+                        <option>SA</option>
+                        <option>TAS</option>
+                        <option>ACT</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputPostcode">Post code</label>
+                    <input required type="text" name="postcode" class="form-control" id="inputPostcode"
+                        placeholder="0215">
+                </div>
+            </div>
+
+            <!--Contact details-->
+            <div class="form-group row">
+                <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input required type="email" name="email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="inputPhone" class="col-sm-2 col-form-label">Phone number</label>
+                <div class="col-sm-10">
+                    <input required type="password" name="phonenumber" class="form-control" id="inputPhone"
+                        placeholder="+61 0021548932">
+                </div>
+            </div>
+
+
+            <div class="form-group"><label for="inputSkills">Skills</label> <br>
+                <div class="form-check">
+                    <input class="form-check-input" name="coding skills" type="checkbox" id="Skill1Check">
+                    <label class="form-check-label" for="Skill1Check">
+                        Coding/Programming
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" name="Design" type="checkbox" id="Skill2Check">
+                    <label class="form-check-label" for="Skill2Check">
+                        UI/UX design
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="otherSkills">Other skills...</label>
+                    <textarea required class="form-control" id="otherSkills" name="Other Skills" rows="3"></textarea>
+                </div>
+            </div>
+            <button type="submit" target="_blank" class="btn btn-primary">Apply</button>
+        </form>
+    </div>
+
+
+
+    <!--Sign up-->
+    <p class="text-center my-5 py-2 text-light subheading bg-dark">Sign up for newsletter</p>
+    <form class="row h-100 pb-5 justify-content-center align-items-center">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <div class="form-group">
+                <input type="email" class=" form-control py-4" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else. Promise.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign up</button>
+        </div>
+    </form>
+
+
+    <!--Footer-->
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; Tracing steps</small>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
