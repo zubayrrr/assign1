@@ -56,6 +56,20 @@ span{
     background-size: cover;
     background-position: bottom;
 }
+.apply-section{
+    background-image: 
+    linear-gradient( rgba(0,0,0,.6), rgba(41, 36, 36, 0.6) ),
+    url('./images/apply-banner.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.enhancements-section{
+    background-image: 
+    linear-gradient( rgba(0,0,0,.6), rgba(41, 36, 36, 0.6) ),
+    url('./images/enhancements-banner.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
 
 .about-banner{
     background-image: url('./images/about-banner.jpeg');
